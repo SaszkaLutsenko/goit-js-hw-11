@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>goit-js-hw-11</title>
-  <link rel="stylesheet" href="./sass/style.scss"/>
-</head>
-<body>
-  <header>
-    <form class="search-form" id="search-form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home work 11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form-inline search-form">
       <input
         type="text"
-        name="searchQuery"
-        autocomplete="off"
+        class="form-control"
+        name="query"
         placeholder="Search images..."
       />
-      <button type="submit" class="btn-search" disabled>
-        <svg class="icon" width="23px" height="20px">
-          <use href="./images/glass-icon.svg#glass"></use>
-        </svg>
-      </button>
+
+      <button type="submit" class="btn btn-primary">Search</button>
     </form>
-    <button type="button" class="btn-dark">Dark Mode</button>
-  </header>
-  <main>
-    <div class="gallery"></div>
-    <button class="btn-more" type="button">LOAD MORE</button>
-    <p class="limit">We're sorry, but you've reached the end of search results.</p>
-  </main>
-<script type="module" src="./js/index.js"></script>
-</body>
+    <div class="loader" style="display: none"></div>
+<div class="container">
+
+  <ul class="gallery"></ul>
+</div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
