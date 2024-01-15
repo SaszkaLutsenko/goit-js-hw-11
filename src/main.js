@@ -19,7 +19,7 @@ form.addEventListener('submit', event => {
 
   // object iterator
   const searchParams = new URLSearchParams({
-    key: '41494285-2be0c6d487dc7750955372a82',
+    key: '41777094-15d23fa072ac8c02efe5e3565',
     q: query,
     image_type: 'photo',
     orientation: 'horizontal',
